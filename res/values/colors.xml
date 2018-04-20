@@ -148,4 +148,7 @@
     <color name="dialog_background">@*android:color/background_device_default_light</color>
 
     <color name="face_intro_outline">#ffdadce0</color>
+
+    <color name="fab_ripple">#1fffffff</color><!-- 12% white -->
+    <color name="fab_shape">?android:attr/colorAccent</color>
 </resources>

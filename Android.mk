@@ -33,6 +33,10 @@ LOCAL_STATIC_ANDROID_LIBRARIES := \
     androidx.preference_preference \
     androidx.recyclerview_recyclerview \
     com.google.android.material_material \
+    androidx.dynamicanimation_dynamicanimation \
+    androidx.palette_palette \
+    androidx.legacy_legacy-support-v13 \
+    androidx.viewpager_viewpager \
     setupcompat \
     setupdesign \
     AicpGear-preference \

@@ -421,4 +421,20 @@
     <!-- Battery meter icon size of advanced bluetooth device -->
     <dimen name="advanced_bluetooth_battery_meter_width">7.8dp</dimen>
     <dimen name="advanced_bluetooth_battery_meter_height">13dp</dimen>
+    <dimen name="icon_space_reserved_padding">72dp</dimen>
+
+
+    <!-- SwitchBar margin start / end -->
+    <dimen name="switchbar_margin_start">72dp</dimen>
+    <dimen name="switchbar_margin_end">16dp</dimen>
+
+
+    <!-- FAB Dimensions -->
+    <dimen name="fab_size">56dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="fab_elevation">12dp</dimen>
+    <dimen name="fab_press_translation_z">9dp</dimen>
+
+    <dimen name="profile_instruction_padding">8dp</dimen>
+    <dimen name="settings_side_margin">0dip</dimen>
 </resources>

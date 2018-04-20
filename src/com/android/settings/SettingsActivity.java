@@ -109,7 +109,7 @@ public class SettingsActivity extends SettingsBaseActivity
 
     // show Back and Next buttons? takes boolean parameter
     // Back will then return RESULT_CANCELED and Next RESULT_OK
-    protected static final String EXTRA_PREFS_SHOW_BUTTON_BAR = "extra_prefs_show_button_bar";
+    public static final String EXTRA_PREFS_SHOW_BUTTON_BAR = "extra_prefs_show_button_bar";
 
     // add a Skip button?
     private static final String EXTRA_PREFS_SHOW_SKIP = "extra_prefs_show_skip";
@@ -367,6 +367,23 @@ public class SettingsActivity extends SettingsBaseActivity
             switchToFragment(TopLevelSettings.class.getName(), null /* args */, false,
                     mInitialTitleResId, mInitialTitle);
         }
+    }
+
+    public void startPreferencePanel(Fragment caller, String fragmentClass, Bundle args,
+            int titleRes, CharSequence titleText, Fragment resultTo, int resultRequestCode) {
+        String title = null;
+        if (titleRes < 0) {
+            if (titleText != null) {
+                title = titleText.toString();
+            } else {
+                // There not much we can do in that case
+                title = "";
+            }
+        }
+//         Utils.startWithFragment(this, fragmentClass, args, resultTo, resultRequestCode,
+//                 titleRes, title, mIsShortcut, mMetricsFeatureProvider.getMetricsCategory(caller));
+        Utils.startWithFragment(this, fragmentClass, args, resultTo, resultRequestCode,
+                titleRes, title, false, 0);
     }
 
     private void setTitleFromIntent(Intent intent) {
